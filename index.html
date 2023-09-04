@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>zuzu.com</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">Zuzu.com</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html" aria-current="page">Home <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#order">Order</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br><br>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col"></div>
+                <div class="col-sm-10">
+                    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img src="holder.js/900x500/auto/#777:#555/text:First slide" class="w-100 d-block" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="holder.js/900x500/auto/#666:#444/text:Second slide" class="w-100 d-block" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="holder.js/900x500/auto/#666:#444/text:Third slide" class="w-100 d-block" alt="Third slide">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-fluid" id="order">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col"></div>
+                <div class="col-sm-10">
+                    <h4 class="mb-3">Klantgegevens</h4>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">voornaam</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="jan" value="" required>
+                                <div class="invalid-feedback">
+                                    je moet een goede voornaam invullen
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">achternaam</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="velden" value="" required>
+                                <div class="invalid-feedback">
+                                    je moet een goede achternaam invullen
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label">e-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    je moet een goede e-mail aan geven
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="address" class="form-label">woonplaats</label>
+                                <input type="text" class="form-control" id="address" placeholder="Kleveringweg 2"
+                                    required>
+                                <div class="invalid-feedback">
+                                    je moet een goede woonplaats aangeven
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="state" class="form-label">stad</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">kies</option>
+                                    <option>Den haag</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    je moet een stad kiezen
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="zip" class="form-label">postcode</label>
+                                <input type="text" class="form-control" id="zip" placeholder="2594 BZ" required>
+                                <div class="invalid-feedback">
+                                    postcode moet er instaan
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2023 Zuzu.com</p>
+        <ul class="list-inline">
+    </footer>
+    <div class="col"></div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+</html>
