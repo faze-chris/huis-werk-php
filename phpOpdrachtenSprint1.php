@@ -101,6 +101,19 @@ if ($age >= 16){
 }else{
     echo "je bent nog niet 18 dus je mag niet stemmen";
 }
+echo "<br>";
+//opdracht 9
+
+$side1 = 2;
+$side2 = 2;
+$side3 = 1;
+if (($side1 +$side2 >$side3) && ($side1 +$side3 > $side3) && ($side2 + $side3 > $side1)){
+    echo "zijde 1: $side1 <br>zijde 2: $side2 <br>zijde 3: $side3 <br> je kan een driehoek maken";
+}else{
+    echo "zijde 1: $side1 <br>zijde 2: $side2 <br>zijde 3: $side3 <br> je kan geen driehoek maken";
+}
+
+
 
 ?>
 
