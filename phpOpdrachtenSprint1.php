@@ -60,6 +60,36 @@ if ($number % 2 == 0) {
 } else {
     echo "$number het is niet even.";
 }
+echo "<br>";
+
+//opdracht 6
+//var_dump($tijd);
+$temp = 15;
+$air = 70;
+$hour = 17;
+
+if ($tijd >=17 && $temp <=20 && $air <= 85){
+    echo "het is $tijd,$temp &$air = airco moet uit";
+}
+echo "<br>";
+//opdracht7
+
+$spaargeld = 950;
+
+if ($spaargeld >=1000){
+    echo "je hebt genoeg en mischien kan je ook een hoesje kopen. je totaal is: $spaargeld";
+}elseif ($spaargeld <750){
+    echo "je hebt tweinig geld en je bent er nog niet dus je moet een bij baantje kopen. je totaal is: $spaargeld";
+}elseif ($spaargeld >=750){
+    echo "je bent er bijna maar nog niet helemaal. je totaal is: $spaargeld";
+}
+echo "<br>";
+
+//opdracht8
+$age = 17;
+if ($age >= 16){
+    echo "je mag scooterrijbewijs halen";
+}
 ?>
 
 
