@@ -87,9 +87,21 @@ echo "<br>";
 
 //opdracht8
 $age = 17;
+$stempas = false;
 if ($age >= 16){
-    echo "je mag scooterrijbewijs halen";
+    echo "je mag scooterrijbewijs halen <br>";
+
+}if ($age >= 18){
+    echo "je bent oud genoeg om te stemmen ";
+    if ($stempas){
+        echo "Je mag stemmen. want je hebt een stempas!";
+    }else{
+        echo "maar je mag niet stemmen want je heb geen stem pas";
+    }
+}else{
+    echo "je bent nog niet 18 dus je mag niet stemmen";
 }
+
 ?>
 
 
