@@ -115,12 +115,10 @@ if (($side1 +$side2 >$side3) && ($side1 +$side3 > $side3) && ($side2 + $side3 > 
 echo "<br>";
 
 // opdracht 10
-$number10 = 5; // Je kunt hier elke gewenste waarde voor $getal instellen.
-
+$number10 = 5;
 $total = 0;
 echo "waarde van veriabele number is: $number10 <br>";
 echo "Optelling is als volgt: <br>";
-
 for ($i = 1; $i <= $number10; $i++) {
     $total += $i;
     if ($i == 1) {
@@ -129,20 +127,16 @@ for ($i = 1; $i <= $number10; $i++) {
         echo " + $i";
     }
 }
-
 echo " = $total";
 echo "<br>";
 
 // opdracht 11
 $getal = 5;
 $faculteit = 1;
-
 for ($i = 1; $i <= $getal; $i++) {
     $faculteit *= $i;
 }
-
 echo "De faculteit van $getal is $faculteit";
-
 echo "<br>";
 
 //opdracht zonder loop 13
@@ -161,8 +155,6 @@ for ($miles = $start; $miles <= $end; $miles++) {
     $kilometers = $miles * 1.609;
     echo "$miles = $kilometers <br>";
 }
-
-
 ?>
 
 
