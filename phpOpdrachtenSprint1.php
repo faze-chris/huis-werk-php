@@ -102,8 +102,8 @@ if ($age >= 16){
     echo "je bent nog niet 18 dus je mag niet stemmen";
 }
 echo "<br>";
-//opdracht 9
 
+//opdracht 9
 $side1 = 2;
 $side2 = 2;
 $side3 = 1;
@@ -112,7 +112,55 @@ if (($side1 +$side2 >$side3) && ($side1 +$side3 > $side3) && ($side2 + $side3 > 
 }else{
     echo "zijde 1: $side1 <br>zijde 2: $side2 <br>zijde 3: $side3 <br> je kan geen driehoek maken";
 }
+echo "<br>";
 
+// opdracht 10
+$number10 = 5; // Je kunt hier elke gewenste waarde voor $getal instellen.
+
+$total = 0;
+echo "waarde van veriabele number is: $number10 <br>";
+echo "Optelling is als volgt: <br>";
+
+for ($i = 1; $i <= $number10; $i++) {
+    $total += $i;
+    if ($i == 1) {
+        echo "$i";
+    } else {
+        echo " + $i";
+    }
+}
+
+echo " = $total";
+echo "<br>";
+
+// opdracht 11
+$getal = 5;
+$faculteit = 1;
+
+for ($i = 1; $i <= $getal; $i++) {
+    $faculteit *= $i;
+}
+
+echo "De faculteit van $getal is $faculteit";
+
+echo "<br>";
+
+//opdracht zonder loop 13
+//$mile1 = 1;
+//$kilometers = $mile1 * 1.60934;
+//echo "$mile1 = $kilometers ";
+//$mile2 = 2;
+//$kilometers = $mile2 * 1.60934;
+//echo "$mile2 = $kilometers ";
+
+//opdracht met loop 13
+$start = 1;
+$end = 10;
+echo "m = km <br>";
+for ($miles = $start; $miles <= $end; $miles++) {
+    $kilometers = $miles * 1.609;
+    echo "$miles = $kilometers <br>";
+}
 
 
 ?>
