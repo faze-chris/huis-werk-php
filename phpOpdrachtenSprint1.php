@@ -155,6 +155,36 @@ for ($miles = $start; $miles <= $end; $miles++) {
     $kilometers = $miles * 1.609;
     echo "$miles = $kilometers <br>";
 }
+echo "<br>";
+
+//opdracht 15
+echo "<h1>patroon 1</h1>";
+$numbers = "";
+for($i = 1; $i <= 6; $i++){
+    $numbers .= $i . " ";
+    echo $numbers . "<br>";
+}
+
+echo "<h1>patroon 2</h1>";
+$numbers = "";
+for($i = 1; $i <= 6; $i++){
+    $numbers .= $i . " ";
+    echo $numbers . "<br>";
+}
+
+echo "<h1>patroon 3</h1>";
+$numbers = "";
+for($i = 1; $i <= 6; $i++){
+    $numbers .= $i . " ";
+    echo $numbers . "<br>";
+}
+
+echo "<h1>patroon 4</h1>";
+$numbers = "";
+for($i = 1; $i <= 6; $i++){
+    $numbers .= $i . " ";
+    echo $numbers . "<br>";
+}
 ?>
 
 
