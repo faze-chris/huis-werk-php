@@ -34,9 +34,9 @@ echo "<br>";
 
 //echo "het jaar $year is geen schrikkeljaar";
 
-if (date ("L") == 1){
+if (date("L") == 1) {
     echo "het jaar " . date("Y") . " is een schrikkeljaar.";
-}else{
+} else {
     echo "het jaar " . date("Y") . " is geen schrikkeljaar.";
 }
 

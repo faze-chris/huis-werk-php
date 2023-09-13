@@ -2,20 +2,26 @@
 //opdracht 1
 $tijd = date("H");
 
-if ($tijd >= 6 && $tijd < 12 ){
+if ($tijd >= 6 && $tijd < 12) {
     echo "het is ochtend";
-}elseif ($tijd >= 12 && $tijd < 18){
+} elseif ($tijd >= 12 && $tijd < 18) {
     echo "het is middag";
-}elseif($tijd >= 18 && $tijd <24){
+} elseif ($tijd >= 18 && $tijd < 24) {
     echo "het is avond";
 }
 
 //opdracht 2
 echo "<br>";
-switch($tijd){
-      case ($tijd >= 6 && $tijd < 12 ) :    echo "het is ochtend";  break;
-      case ($tijd >= 12 && $tijd < 18) :    echo "het is middag";  break;
-      case ($tijd >= 18 && $tijd <24) :     echo "het is avond";  break;
+switch ($tijd) {
+    case ($tijd >= 6 && $tijd < 12) :
+        echo "het is ochtend";
+        break;
+    case ($tijd >= 12 && $tijd < 18) :
+        echo "het is middag";
+        break;
+    case ($tijd >= 18 && $tijd < 24) :
+        echo "het is avond";
+        break;
 }
 
 //opdracht 3
@@ -23,13 +29,13 @@ echo "<br>";
 $number1 = 10;
 $number2 = 15;
 
-if ($number1 > $number2){
+if ($number1 > $number2) {
     echo "$number1 is groter dan $number2";
     echo "<br>";
-    $result1 = $number1* 2;
+    $result1 = $number1 * 2;
     $result2 = $result1 + $number2;
     echo "uitkomst is: $result2";
-}elseif ($number2 > $number1){
+} elseif ($number2 > $number1) {
     echo "$number2 is groter dan $number1";
     echo "<br>";
     $result1 = $number2 * 2;
@@ -43,13 +49,13 @@ $price = 100;
 if ($price >= 150) {
     $result3 = $price * 1.19;
     echo "oude prijs: $price. na verhoging van 19% is de prijs: $result3";
-}elseif ($price < 55){
-    $result3 = $price  * 1.11;
+} elseif ($price < 55) {
+    $result3 = $price * 1.11;
     echo "oude prijs: $price. na verhoging van 11% is de prijs: $result3";
-}elseif ($price >= 55 && $price <150){
+} elseif ($price >= 55 && $price < 150) {
     $result3 = $price * 1.16;
     echo "oude prijs: $price. na verhoging van 16% is de prijs: $result3";
-    }
+}
 echo "<br>";
 
 //opdracht 5
@@ -68,7 +74,7 @@ $temp = 15;
 $air = 70;
 $hour = 17;
 
-if ($tijd >=17 && $temp <=20 && $air <= 85){
+if ($tijd >= 17 && $temp <= 20 && $air <= 85) {
     echo "het is $tijd,$temp &$air = airco moet uit";
 }
 echo "<br>";
@@ -76,11 +82,11 @@ echo "<br>";
 
 $spaargeld = 950;
 
-if ($spaargeld >=1000){
+if ($spaargeld >= 1000) {
     echo "je hebt genoeg en mischien kan je ook een hoesje kopen. je totaal is: $spaargeld";
-}elseif ($spaargeld <750){
+} elseif ($spaargeld < 750) {
     echo "je hebt tweinig geld en je bent er nog niet dus je moet een bij baantje kopen. je totaal is: $spaargeld";
-}elseif ($spaargeld >=750){
+} elseif ($spaargeld >= 750) {
     echo "je bent er bijna maar nog niet helemaal. je totaal is: $spaargeld";
 }
 echo "<br>";
@@ -88,17 +94,18 @@ echo "<br>";
 //opdracht8
 $age = 17;
 $stempas = false;
-if ($age >= 16){
+if ($age >= 16) {
     echo "je mag scooterrijbewijs halen <br>";
 
-}if ($age >= 18){
+}
+if ($age >= 18) {
     echo "je bent oud genoeg om te stemmen ";
-    if ($stempas){
+    if ($stempas) {
         echo "Je mag stemmen. want je hebt een stempas!";
-    }else{
+    } else {
         echo "maar je mag niet stemmen want je heb geen stem pas";
     }
-}else{
+} else {
     echo "je bent nog niet 18 dus je mag niet stemmen";
 }
 echo "<br>";
@@ -107,9 +114,9 @@ echo "<br>";
 $side1 = 2;
 $side2 = 2;
 $side3 = 1;
-if (($side1 +$side2 >$side3) && ($side1 +$side3 > $side3) && ($side2 + $side3 > $side1)){
+if (($side1 + $side2 > $side3) && ($side1 + $side3 > $side3) && ($side2 + $side3 > $side1)) {
     echo "zijde 1: $side1 <br>zijde 2: $side2 <br>zijde 3: $side3 <br> je kan een driehoek maken";
-}else{
+} else {
     echo "zijde 1: $side1 <br>zijde 2: $side2 <br>zijde 3: $side3 <br> je kan geen driehoek maken";
 }
 echo "<br>";
@@ -160,28 +167,28 @@ echo "<br>";
 //opdracht 15
 echo "<h1>patroon 1</h1>";
 $numbers = "";
-for($i = 1; $i <= 6; $i++){
+for ($i = 1; $i <= 6; $i++) {
     $numbers .= $i . " ";
     echo $numbers . "<br>";
 }
 
 echo "<h1>patroon 2</h1>";
 $numbers = "";
-for($i = 1; $i <= 6; $i++){
+for ($i = 1; $i <= 6; $i++) {
     $numbers .= $i . " ";
     echo $numbers . "<br>";
 }
 
 echo "<h1>patroon 3</h1>";
 $numbers = "";
-for($i = 1; $i <= 6; $i++){
+for ($i = 1; $i <= 6; $i++) {
     $numbers .= $i . " ";
     echo $numbers . "<br>";
 }
 
 echo "<h1>patroon 4</h1>";
 $numbers = "";
-for($i = 1; $i <= 6; $i++){
+for ($i = 1; $i <= 6; $i++) {
     $numbers .= $i . " ";
     echo $numbers . "<br>";
 }
