@@ -40,4 +40,6 @@ if (date("L") == 1) {
     echo "het jaar " . date("Y") . " is geen schrikkeljaar.";
 }
 
+//cookies test
+setcookie("username", "mondriaan", time() + 3600)
 ?>
