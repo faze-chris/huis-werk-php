@@ -68,14 +68,16 @@ echo "<br>";
 
 //opdracht5
 
-$V = 50;
-$A = 5.5;
-$S = 50;
+$v = 50;
+$a = 5.5;
+$s = 50;
 
 function speed($s, $a)
 {
-    
+    sqrt(2 . $s . $a);
 }
+$getal = speed();
+echo $getal;
 
 
 //string functions
