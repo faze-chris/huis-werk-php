@@ -3,8 +3,8 @@ session_start();
 //
 ////opdracht1
 $_SESSION['visit'] += 1;
-if(isset($_SESSION['visit'])){
-    echo "deze pagina heb je al: ".$_SESSION['visit']. " keer bekeken <br> voordat je de internet browser hebt afgesloten.";
+if (isset($_SESSION['visit'])) {
+    echo "deze pagina heb je al: " . $_SESSION['visit'] . " keer bekeken <br> voordat je de internet browser hebt afgesloten.";
 }
 echo "<br>";
 
@@ -28,6 +28,55 @@ setcookie('total_visits', $total_visits, 0);
 echo "Deze pagina heb je al: " . $_SESSION['visit'] . " keer bekeken.<br>";
 echo "In totaal heb je deze website al: " . $total_visits . " keer bezocht.";
 echo "<br>";
+
+//opdracht3
+function generateRandomCode()
+{
+    $number = rand(1000, 9999);
+    $length = 2;
+    $string = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomNumber = rand(0, 25);
+        $randomString = chr(65 + $randomNumber);
+        $string .= $randomString;
+    }
+    return $number . $string;
+}
+
+$randomCode = generateRandomCode();
+echo "$randomCode";
+echo "<br>";
+
+//opdracht4
+function keerSom1($num1, $num2)
+{
+    return $num1 * $num2;
+}
+
+function keerSom2($num1, $num2)
+{
+    return $num1 * $num2;
+}
+
+$resultOpdracht4_1 = keerSom1(10, 3.14159);
+$resultOpdracht4_2 = keerSom2(25, 3.14159);
+
+echo round($resultOpdracht4_1, 1);
+echo "<br>";
+echo round($resultOpdracht4_2, 1);
+echo "<br>";
+
+//opdracht5
+
+$V = 50;
+$A = 5.5;
+$S = 50;
+
+function speed($s, $a)
+{
+    
+}
+
 
 //string functions
 function addStrings(string $string1, string $string2 = " world"): string
