@@ -1,21 +1,47 @@
 <?php
+//session_start();
+//
+////opdracht1
+//$_SESSION['visit'] += 1;
+//if(isset($_SESSION['visit'])){
+//    echo "deze pagina heb je al: ".$_SESSION['visit']. " keer bekeken <br> voordat je de internet browser hebt afgesloten.";
+//}
+//echo "<br>";
+//
+////opdracht 2
+setcookie("visit", 1, time() + 3600);
+//
+//if (isset($_COOKIE['visit'])){
+//    echo "cookie bestaat";
+//}else{
+//    echo "cookie bestaat niet";
+//}
+//
+
+
 session_start();
 
-//opdracht1
-$_SESSION['visit'] += 1;
-if(isset($_SESSION['visit'])){
-    echo "deze pagina heb je al: ".$_SESSION['visit']. " keer bekeken <br> voordat je de internet browser hebt afgesloten.";
-}
-echo "<br>";
-
-//opdracht 2
-setcookie("username", "mondriaan", time() + 3600);
-
-if (isset($_COOKIE['username'])){
-    echo $_COOKIE['username'];
+// Controleer of de sessievariabele 'visit' bestaat
+if (isset($_SESSION['visit'])) {
+    $_SESSION['visit'] += 1;
+} else {
+    $_SESSION['visit'] = 1;
 }
 
+// Controleer of er een cookie genaamd 'total_visits' bestaat
+if (isset($_COOKIE['total_visits'])) {
+    echo "cookie bestaat";
+    $total_visits = $_COOKIE['total_visits'] + 1;
+} else {
+    echo "cookie bestaat niet";
+    $total_visits = 1;
+}
 
+// Sla het totale aantal bezoeken op in een cookie dat geldig blijft tot de browser wordt afgesloten
+setcookie('total_visits', $total_visits, 0);
+
+echo "Deze pagina heb je al: " . $_SESSION['visit'] . " keer bekeken.<br>";
+echo "In totaal heb je deze website al: " . $total_visits . " keer bezocht.";
 
 
 echo "<br>";
@@ -59,7 +85,7 @@ $_SESSION['name'] = "lemmen";
 echo $_SESSION['name'];
 
 //cookies aanmaken
-if (isset($_COOKIE['username'])){
+if (isset($_COOKIE['username'])) {
     echo $_COOKIE['username'];
 }
 ?>
