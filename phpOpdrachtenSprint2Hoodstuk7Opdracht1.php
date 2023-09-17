@@ -31,27 +31,6 @@ if (isset($_POST['bereken'])) {
 </html>
 <!--hoodstuk 7 opdracht 1 eind-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!---->
 <?php
 //hoofdstuk 7
