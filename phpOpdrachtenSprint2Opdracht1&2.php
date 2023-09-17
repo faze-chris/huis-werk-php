@@ -69,34 +69,61 @@ echo "<br>";
 //opdracht 5
 $a = 5.5;
 $s = 5;
-
 $numbers = 2 . $s . $a;
+
 function wortel($numbers)
 {
-     sqrt($numbers);
-    return round($numbers );
+    sqrt($numbers);
+    return round($numbers);
 }
+
 $v = wortel($numbers);
 echo "$v km/h <br>";
 
+//opdracht6
+function usdToEur0($usd, $wisselkoers)
+{
+    $euro = $usd * $wisselkoers;
+    return $euro;
+}
 
+$usd = 1;
+$wisselkoers = 0.93;
+$euro = usdToEur0($usd, $wisselkoers);
+echo "$usd USD is equal to $euro EUR ";
 
+//opdracht 7
 
+function kwadraat5()
+{
+    $g = 5;
+    $derdeKwadraat = $g ** 3;
+    echo "$g x $g x $g = $derdeKwadraat";
+}
 
+echo "<br>";
+kwadraat5();
+echo "<br>";
 
+function kwadraat10()
+{
+    $g = 10;
+    $derdeKwadraat = $g ** 3;
+    echo "$g x $g x $g = $derdeKwadraat";
+}
 
+kwadraat10();
+echo "<br>";
 
+function toonDerdeMacht($g)
+{
+    $derdeMacht = $g ** 3;
+    echo "$g x $g x $g = $derdeMacht<br>";
+}
 
-
-
-
-
-
-
-
-
-
-
+for ($i = 1; $i <= 25; $i++) {
+    toonDerdeMacht($i);
+}
 
 //string functions
 function addStrings(string $string1, string $string2 = " world"): string
