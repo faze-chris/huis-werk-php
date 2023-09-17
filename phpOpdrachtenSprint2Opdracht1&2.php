@@ -66,18 +66,36 @@ echo "<br>";
 echo round($resultOpdracht4_2, 1);
 echo "<br>";
 
-//opdracht5
-
-$v = 50;
+//opdracht 5
 $a = 5.5;
-$s = 50;
+$s = 5;
 
-function speed($s, $a)
+$numbers = 2 . $s . $a;
+function wortel($numbers)
 {
-    sqrt(2 . $s . $a);
+     sqrt($numbers);
+    return round($numbers );
 }
-$getal = speed();
-echo $getal;
+$v = wortel($numbers);
+echo "$v km/h <br>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //string functions
