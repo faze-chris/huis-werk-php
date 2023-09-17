@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calculator</title>
+    <title>h7 - opdracht 2</title>
 </head>
 <body>
-<h1>Calculator</h1>
 <form method="post" action="">
-    Getal 1: <input type="text" name="getal1" required><br><br>
-    Getal 2: <input type="text" name="getal2" required><br><br>
-    Kies een bewerking:
-    <input type="radio" name="bewerking" value="optellen" checked> Optellen
-    <input type="radio" name="bewerking" value="aftrekken"> Aftrekken
-    <input type="radio" name="bewerking" value="vermenigvuldigen"> Vermenigvuldigen
-    <input type="radio" name="bewerking" value="delen"> Delen<br><br>
+    Getal 1: <input type="text" name="number1" required><br><br>
+    <input type="radio" name="som" value="optellen" checked> Optellen
+    <input type="radio" name="som" value="aftrekken"> Aftrekken
+    <input type="radio" name="som" value="vermenigvuldigen"> Vermenigvuldigen
+    <input type="radio" name="som" value="delen"> Delen<br><br>
+    Getal 2: <input type="text" name="number2" required>
+    <br><br>
     <input type="submit" name="bereken" value="Bereken">
+    <br><br>
 </form>
-
 <?php
 if (isset($_POST['bereken'])) {
-    $getal1 = floatval($_POST['getal1']);
-    $getal2 = floatval($_POST['getal2']);
-    $bewerking = $_POST['bewerking'];
-    $resultaat = 0;
+    $number1 = floatval($_POST['number1']);
+    $number2 = floatval($_POST['number2']);
+    $som = $_POST['som'];
+    $result = 0;
 
-    switch ($bewerking) {
+    switch ($som) {
         case 'optellen':
-            $resultaat = $getal1 + $getal2;
+            $result = $number1 + $number2;
             break;
         case 'aftrekken':
-            $resultaat = $getal1 - $getal2;
+            $result = $number1 - $number2;
             break;
         case 'vermenigvuldigen':
-            $resultaat = $getal1 * $getal2;
+            $result = $number1 * $number2;
             break;
         case 'delen':
-            if ($getal2 != 0) {
-                $resultaat = $getal1 / $getal2;
+            if ($number2 != 0) {
+                $result = $number1 / $number2;
             } else {
                 echo "Kan niet delen door nul.";
             }
             break;
         default:
-            echo "Ongeldige bewerking geselecteerd.";
+            echo "Ongeldige som geselecteerd.";
             break;
     }
 
-    echo "Resultaat: $getal1 $bewerking $getal2 = $resultaat";
+    echo " $number1 $som $number2 = $result";
 }
 ?>
 </body>

@@ -2,14 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BTW Calculator</title>
+    <title>h7 - opdracht 1</title>
 </head>
 <body>
-<h1>BTW Calculator</h1>
 <form method="post" action="">
     Bedrag exclusief BTW: <input type="text" name="bedrag" required>
     <br>
-    <input type="radio" name="btw_tarief" value="9" checked>Laag.  9%
+    <input type="radio" name="btw_tarief" value="9" checked>Laag. 9%
     <br>
     <input type="radio" name="btw_tarief" value="21">Hoog, 21%<br><br>
     <input type="submit" name="bereken" value="Uitrekenen">
@@ -17,14 +16,14 @@
 </form>
 <?php
 if (isset($_POST['bereken'])) {
-    $bedragExclusief  = floatval($_POST['bedrag']);
-    $btwPercentage  = floatval($_POST['btw_tarief']);
+    $bedragExclusief = floatval($_POST['bedrag']);
+    $btwPercentage = floatval($_POST['btw_tarief']);
 
-    $bedragInclusief  = $bedragExclusief * (1 + ($btwPercentage  / 100));
+    $bedragInclusief = $bedragExclusief * (1 + ($btwPercentage / 100));
 
-    $bedragInclusiefWeergave  = number_format($bedragInclusief, 2, ',', '.');
+    $bedragInclusiefWeergave = number_format($bedragInclusief, 2, ',', '.');
 
-    echo "Bedrag inclusief " . $btwPercentage  . "% BTW: €" . $bedragInclusiefWeergave ;
+    echo "Bedrag inclusief " . $btwPercentage . "% BTW: €" . $bedragInclusiefWeergave;
 }
 ?>
 </body>
