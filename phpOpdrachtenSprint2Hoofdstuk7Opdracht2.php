@@ -21,7 +21,6 @@ if (isset($_POST['bereken'])) {
     $number2 = floatval($_POST['number2']);
     $som = $_POST['som'];
     $result = 0;
-
     switch ($som) {
         case 'optellen':
             $result = $number1 + $number2;
@@ -43,7 +42,6 @@ if (isset($_POST['bereken'])) {
             echo "Ongeldige som geselecteerd.";
             break;
     }
-
     echo " $number1 $som $number2 = $result";
 }
 ?>
