@@ -32,8 +32,8 @@ if (isset($_POST['bereken'])) {
 
 <!---->
 <?php
-hoofdstuk 7
-opdracht1
+//hoofdstuk 7
+//opdracht1
 //hoofdstuk 7 forms opdrachten demo
 if (isset($_POST['submit'])) {
     echo "het formulieris verzonden";
