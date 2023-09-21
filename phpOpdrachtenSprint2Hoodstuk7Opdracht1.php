@@ -21,7 +21,7 @@ if (isset($_POST['bereken'])) {
 
     $bedragInclusief = $bedragExclusief * (1 + ($btwPercentage / 100));
 
-    $bedragInclusiefWeergave = number_format($bedragInclusief, 2, ',', '.');
+    $bedragInclusiefWeergave = number_format($bedragInclusief, 2);
 
     echo "Bedrag inclusief " . $btwPercentage . "% BTW: €" . $bedragInclusiefWeergave;
 }
